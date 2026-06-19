@@ -1,0 +1,248 @@
+/* 
+  Acharya Ganesh - Premium Vedic Astrology Style Guidelines
+  Custom Theme built on Tailwind CSS v4
+*/
+
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-gold-50: #fbf9ef;
+  --color-gold-100: #fdf5d6;
+  --color-gold-200: #f9e29c;
+  --color-gold-300: #e2c069;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #b8860b;
+  --color-gold-600: #9a6d07;
+  --color-gold-700: #7d5405;
+  --color-gold-800: #5e3b04;
+  --color-gold-900: #422602;
+  --color-gold-950: #1a0f00;
+
+  --color-cosmic-dark: #050714;
+  --color-cosmic-deep: #0b0d23;
+  --color-cosmic-mid: #141634;
+  --color-cosmic-purple: #1e1b4b;
+  --color-cosmic-glow: #3b0764;
+
+  --font-cinzel: "Cinzel", serif;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
+}
+
+/* Base resets & custom scrollbar */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-cosmic-dark);
+  color: #f3f4f6;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050714;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-900);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-500);
+}
+
+/* Glassmorphism Styles */
+.glass {
+  background: rgba(20, 22, 52, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+.glass-premium {
+  background: linear-gradient(135deg, rgba(30, 27, 75, 0.45) 0%, rgba(11, 13, 35, 0.75) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.6);
+}
+
+.glass-nav {
+  background: rgba(5, 7, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Custom Gold Text & Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF 0%, #f9e29c 40%, #e2c069 70%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-luxury {
+  background: linear-gradient(90deg, #d4af37 0%, #fff7e4 30%, #f9e29c 70%, #b8860b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f9e29c 0%, #d4af37 50%, #b8860b 100%);
+}
+
+.bg-cosmic-gradient {
+  background: radial-gradient(circle at top, #1e1b4b 0%, #0b0d23 45%, #050714 100%);
+}
+
+.border-gold-glow {
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.08);
+}
+
+.border-gold-glow:hover {
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+/* Astrology Animations */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-slow-reverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(1.08); }
+}
+
+@keyframes star-twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.9); }
+  50% { opacity: 0.9; transform: scale(1.1); }
+}
+
+@keyframes pulse-glow-bg {
+  0%, 100% { filter: drop-shadow(0 0 10px rgba(170, 110, 230, 0.15)); }
+  50% { filter: drop-shadow(0 0 30px rgba(223, 190, 124, 0.3)); }
+}
+
+/* Animation utilities */
+.animate-spin-slow {
+  animation: spin-slow 75s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 105s linear infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 8s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 4s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: star-twinkle var(--twinkle-duration, 3s) ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: pulse-glow-bg 6s ease-in-out infinite;
+}
+
+/* Custom interactive classes */
+.card-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 45%,
+    rgba(223, 190, 124, 0.1) 50%,
+    transparent 55%
+  );
+  transform: rotate(45deg);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+
+.card-shine:hover::after {
+  transform: translate(50%, 50%) rotate(45deg);
+}
+
+/* Reveal on scroll state classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom interactive FAQ accordions */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.faq-content.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+.chevron-icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* Interactive custom mouse-stars */
+.star-starry {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+}

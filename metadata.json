@@ -1,0 +1,6 @@
+{
+  "name": "Acharya Ganesh",
+  "description": "Premium Vedic Astrology Platform offering professional guidance, courses, and online consultations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

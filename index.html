@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acharya Ganesh - Premium Vedic Astrology & Guidance Platform</title>
+    <!-- Style & Engine References -->
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/script.js"></script>
+  </head>
+  <body class="bg-cosmic-dark text-gray-100 antialiased overflow-x-hidden selection:bg-gold-500 selection:text-gold-950">
+
+    <!-- Header Navigation -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5 bg-transparent">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-500 via-gold-400 to-gold-200 flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-transform group-hover:scale-105">
+            <span class="text-cosmic-dark font-cinzel font-black text-sm">AG</span>
+          </div>
+          <div>
+            <span class="font-cinzel text-lg sm:text-xl font-black tracking-widest text-gold-luxury">ACHARYA GANESH</span>
+            <span class="block text-[8px] uppercase tracking-[0.3em] text-gray-400 font-space font-medium">Authentic Vedic Astrology</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Items -->
+        <nav class="hidden lg:flex items-center gap-8 font-space text-[12px] uppercase tracking-[0.15em] text-gray-300">
+          <a href="#home" class="hover:text-gold-300 transition-colors">Home</a>
+          <a href="#about" class="hover:text-gold-300 transition-colors">About</a>
+          <a href="#services" class="hover:text-gold-300 transition-colors">Services</a>
+          <a href="#courses" class="hover:text-gold-300 transition-colors">Courses</a>
+          <a href="#consultation" class="hover:text-gold-300 transition-colors">Consultation</a>
+          <a href="#faq" class="hover:text-gold-300 transition-colors">FAQ</a>
+          <a href="#contact" class="hover:text-gold-300 transition-colors">Contact</a>
+        </nav>
+
+        <!-- CTA Buttons -->
+        <div class="hidden sm:flex items-center gap-4">
+          <a href="tel:+919999999999" class="text-[11px] uppercase font-space tracking-wider text-gold-300 border border-gold-400/30 hover:border-gold-300 px-4 py-2.5 rounded-full transition-all flex items-center gap-2 bg-cosmic-dark/40">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now
+          </a>
+          <button class="open-booking-modal bg-gold-gradient text-cosmic-dark font-space font-extrabold text-[11px] uppercase tracking-widest px-6 py-2.5 rounded-full hover:shadow-[0_0_22px_rgba(212,175,55,0.45)] transition-all cursor-pointer">
+            Book Consultation
+          </button>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button id="mobile-menu-btn" class="lg:hidden text-gold-300 hover:text-gold-200 focus:outline-none p-1.5 cursor-pointer" aria-label="Toggle Navigation Panel">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6.5 h-6.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 hidden">
+      <div class="fixed inset-0 bg-cosmic-dark/95 backdrop-blur-md"></div>
+      <div class="fixed inset-y-0 right-0 max-w-xs w-full glass-premium p-8 flex flex-col justify-between shadow-2xl">
+        <div>
+          <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/5">
+            <span class="font-cinzel text-gold-luxury font-bold text-sm tracking-widest">NAVIGATION</span>
+            <button class="mobile-menu-link text-gray-400 hover:text-white" aria-label="Close menu">✕</button>
+          </div>
+          <nav class="flex flex-col gap-6 text-sm uppercase tracking-widest font-space text-gray-300">
+            <a href="#home" class="mobile-menu-link hover:text-gold-300 transition-colors">Home</a>
+            <a href="#about" class="mobile-menu-link hover:text-gold-300 transition-colors">About</a>
+            <a href="#services" class="mobile-menu-link hover:text-gold-300 transition-colors">Services</a>
+            <a href="#courses" class="mobile-menu-link hover:text-gold-300 transition-colors">Upcoming Courses</a>
+            <a href="#consultation" class="mobile-menu-link hover:text-gold-300 transition-colors">Consultation</a>
+            <a href="#faq" class="mobile-menu-link hover:text-gold-300 transition-colors">FAQ</a>
+            <a href="#contact" class="mobile-menu-link hover:text-gold-300 transition-colors">Contact Us</a>
+          </nav>
+        </div>
+        <div class="space-y-4 pt-6 border-t border-white/10">
+          <a href="tel:+919999999999" class="w-full text-center block text-xs uppercase font-space tracking-wider text-gold-300 border border-gold-400/30 py-3 rounded-full">
+            Call Astrologer
+          </a>
+          <button class="open-booking-modal w-full bg-gold-gradient text-cosmic-dark font-space font-extrabold text-xs uppercase tracking-widest py-3 rounded-full">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN APP WRAPPER -->
+    <main>
+
+      <!-- SECTION 1: HERO -->
+      <section id="home" class="relative min-h-screen bg-cosmic-gradient pt-36 pb-20 flex items-center overflow-hidden">
+        <!-- Interactive Constellations Background -->
+        <div class="constellations-bg" data-stars="75"></div>
+        
+        <!-- Blurred Background Glows -->
+        <div class="absolute top-1/4 right-[10%] w-[500px] h-[500px] rounded-full bg-cosmic-purple/20 blur-[130px] pointer-events-none"></div>
+        <div class="absolute bottom-[-100px] left-[-100px] w-[400px] h-[400px] rounded-full bg-cosmic-glow/15 blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Left Info Panel -->
+            <div class="lg:col-span-7 space-y-6 reveal">
+              <!-- Animated Badge -->
+              <div class="inline-flex items-center gap-2.5 px-4  py-1.5 rounded-full bg-white/5 border border-white/10 shadow-[0_0_15px_rgba(212,175,55,0.05)]">
+                <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+                <span class="text-[10px] sm:text-xs font-space uppercase tracking-[0.22em] text-gray-300 font-semibold text-gold-luxury">India's Trusted Astrology Platform</span>
+              </div>
+              
+              <h1 class="font-serif text-4.5xl sm:text-6xl md:text-6.5xl font-extrabold tracking-tight text-white leading-[1.1]">
+                Professional <br class="hidden sm:inline" />
+                <span class="italic text-gold-luxury text-gold-gradient">Vedic Astrology</span> <br />
+                Guidance by Acharya Ganesh
+              </h1>
+              
+              <p class="text-gray-400 text-sm sm:text-base md:text-lg font-light leading-relaxed max-w-xl">
+                Get highly accurate traditional predictions and deeply personalized remedial alignments for your love, marriage, career, business, health, kundli, and vastu parameters.
+              </p>
+
+              <!-- Bullets Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3.5 gap-x-6 max-w-lg">
+                <div class="flex items-center gap-3 text-sm text-gray-300">
+                  <span class="text-gold-400 font-bold font-mono">✓</span>
+                  <span>20+ Years Legacy</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-gray-300">
+                  <span class="text-gold-400 font-bold font-mono">✓</span>
+                  <span>1,00,000+ Blessed Souls</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-gray-300">
+                  <span class="text-gold-400 font-bold font-mono">✓</span>
+                  <span>Group of Expert Scholars</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-gray-300">
+                  <span class="text-gold-400 font-bold font-mono">✓</span>
+                  <span>Strictly Confidential Consultation</span>
+                </div>
+              </div>
+
+              <!-- Primary CTA Panel -->
+              <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                <button class="open-booking-modal bg-gold-gradient text-cosmic-dark font-space font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl shadow-[0_4px_25px_rgba(212,175,55,0.35)] hover:shadow-[0_4px_35px_rgba(212,175,55,0.55)] transition-all cursor-pointer text-center">
+                  Book Your Session
+                </button>
+                <a href="#contact" class="bg-white/5 border border-white/10 hover:border-white/20 text-gray-200 font-space font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-white/10 transition-all text-center">
+                  Talk To Expert
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Profile Display -->
+            <div class="lg:col-span-5 relative flex justify-center items-center py-6 reveal">
+              <!-- Astrological Zodiac Circle -->
+              <div class="absolute w-[320px] h-[320px] sm:w-[440px] sm:h-[440px] rounded-full border border-gold-400/25 animate-spin-slow pointer-events-none flex items-center justify-center">
+                <!-- Floating Traditional Sanskrit symbols or Zodiac Marks -->
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 text-gold-400/80 font-bold text-xl select-none">♈</div>
+                <div class="absolute top-1/2 -right-3 -translate-y-1/2 text-gold-400/80 font-bold text-xl select-none">♋</div>
+                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 text-gold-400/80 font-bold text-xl select-none">♎</div>
+                <div class="absolute top-1/2 -left-3 -translate-y-1/2 text-gold-400/80 font-bold text-xl select-none">♑</div>
+              </div>
+
+              <!-- Inner Golden Glow -->
+              <div class="absolute w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] rounded-full bg-gold-500/10 blur-[60px] animate-pulse"></div>
+
+              <!-- Floating Badges on Portrait -->
+              <div class="absolute -right-4 top-12 bg-white/10 backdrop-blur-xl p-4 rounded-xl border border-white/15 shadow-2xl z-20">
+                <p class="text-gold-200 text-[10px] font-bold font-space tracking-wider">EXPERIENCE</p>
+                <p class="text-xl sm:text-2xl font-bold font-serif text-white">17+ YRS</p>
+              </div>
+
+              <div class="absolute -left-6 bottom-16 bg-white/10 backdrop-blur-xl p-4 rounded-xl border border-white/15 shadow-2xl z-20">
+                <p class="text-gold-200 text-[10px] font-bold font-space tracking-wider">SATISFACTION</p>
+                <p class="text-xl sm:text-2xl font-bold font-serif text-white">99.9%</p>
+              </div>
+
+              <!-- Main Portrait Box -->
+              <div class="relative w-[280px] h-[360px] sm:w-[325px] sm:h-[420px] rounded-2xl overflow-hidden border-2 border-gold-400/35 bg-cosmic-deep shadow-[0_15px_45px_0_rgba(0,0,0,0.85)] z-10 transition-transform hover:scale-[1.01] duration-500 animate-glow-pulse">
+                <img src="/src/assets/images/regenerated_image_1781846614398.png" class="w-full h-full object-cover" alt="Master Vedic Astrologer Acharya Ganesh" referrerpolicy="no-referrer" />
+                <!-- Vignette cover -->
+                <div class="absolute inset-0 bg-gradient-to-t from-cosmic-dark via-transparent to-transparent opacity-75"></div>
+                <!-- Mini overlay info -->
+                <div class="absolute bottom-5 left-0 right-0 text-center">
+                  <p class="text-gold-luxury font-serif italic text-lg tracking-wide font-semibold">Acharya Ganesh</p>
+                  <p class="text-[9px] uppercase tracking-[0.25em] text-white/70 font-space font-medium">Master Astrologer & Vastu Expert</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: WHO CAN BENEFIT -->
+      <section id="about" class="py-24 bg-cosmic-dark relative overflow-hidden">
+        <div class="constellations-bg" data-stars="30"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <!-- Heading -->
+          <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+            <span class="font-space text-xs uppercase tracking-[0.25em] text-gold-400 font-bold block mb-3">Training Eligibility</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-4">
+              Who can join <span class="italic text-gold-luxury text-gold-gradient">DIDM training program?</span>
+            </h2>
+            <p class="text-gray-400 text-sm sm:text-base font-light leading-relaxed max-w-2xl mx-auto mt-4">
+              The Delhi Institute of Digital Marketing (DIDM) training program is carefully crafted for a diverse range of ambitious individuals looking to conquer the digital frontier. Whether you are an aspiring student aiming to kickstart a high-growth career, a working professional seeking to upskill and transition fields, or an entrepreneur determined to skyrocket your brand’s online presence, this masterclass provides the perfect blueprint. No prior technical background is required—just an eagerness to learn modern SEO, social media marketing, PPC advertising, and strategic campaign execution.
+            </p>
+            <div class="w-20 h-0.5 bg-gold-400/30 mx-auto mt-6"></div>
+          </div>
+
+          <!-- Circular Statistic Progress Bars -->
+          <div id="who-benefits" class="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto reveal">
+            <!-- Ring 1 -->
+            <div class="flex flex-col items-center text-center p-6 glass rounded-2xl border border-white/5 hover:border-gold-400/30 transition-all group">
+              <div class="relative w-28 h-28 mb-5 flex items-center justify-center">
+                <svg class="progress-ring w-28 h-28 transform -rotate-90" data-percent="88">
+                  <circle cx="56" cy="56" r="48" stroke="rgba(255, 255, 255, 0.05)" stroke-width="4" fill="transparent" />
+                  <circle class="progress-ring-circle" cx="56" cy="56" r="48" stroke="#D4AF37" stroke-width="4" fill="transparent" stroke-linecap="round" />
+                </svg>
+                <div class="absolute font-serif text-2xl font-bold text-white counter-number" data-target="100" data-suffix="+">100+</div>
+              </div>
+              <h3 class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">Cities Covered</h3>
+              <p class="text-[10px] text-gray-500 mt-1 uppercase font-space tracking-wider">Across Globe</p>
+            </div>
+
+            <!-- Ring 2 -->
+            <div class="flex flex-col items-center text-center p-6 glass rounded-2xl border border-white/5 hover:border-gold-400/30 transition-all group">
+              <div class="relative w-28 h-28 mb-5 flex items-center justify-center">
+                <svg class="progress-ring w-28 h-28 transform -rotate-90" data-percent="92">
+                  <circle cx="56" cy="56" r="48" stroke="rgba(255, 255, 255, 0.05)" stroke-width="4" fill="transparent" />
+                  <circle class="progress-ring-circle" cx="56" cy="56" r="48" stroke="#D4AF37" stroke-width="4" fill="transparent" stroke-linecap="round" />
+                </svg>
+                <div class="absolute font-serif text-2xl font-bold text-white counter-number" data-target="50" data-suffix="+">50+</div>
+              </div>
+              <h3 class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">Expert Astrologers</h3>
+              <p class="text-[10px] text-gray-500 mt-1 uppercase font-space tracking-wider">Scholarly Team</p>
+            </div>
+
+            <!-- Ring 3 -->
+            <div class="flex flex-col items-center text-center p-6 glass rounded-2xl border border-white/5 hover:border-gold-400/30 transition-all group">
+              <div class="relative w-28 h-28 mb-5 flex items-center justify-center">
+                <svg class="progress-ring w-28 h-28 transform -rotate-90" data-percent="98">
+                  <circle cx="56" cy="56" r="48" stroke="rgba(255, 255, 255, 0.05)" stroke-width="4" fill="transparent" />
+                  <circle class="progress-ring-circle" cx="56" cy="56" r="48" stroke="#D4AF37" stroke-width="4" fill="transparent" stroke-linecap="round" />
+                </svg>
+                <div class="absolute font-serif text-xl sm:text-2xl font-bold text-white counter-number" data-target="100000" data-suffix="+">1,00,000+</div>
+              </div>
+              <h3 class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">Happy Clients</h3>
+              <p class="text-[10px] text-gray-500 mt-1 uppercase font-space tracking-wider">Satisfied Souls</p>
+            </div>
+
+            <!-- Ring 4 -->
+            <div class="flex flex-col items-center text-center p-6 glass rounded-2xl border border-white/5 hover:border-gold-400/30 transition-all group">
+              <div class="relative w-28 h-28 mb-5 flex items-center justify-center">
+                <svg class="progress-ring w-28 h-28 transform -rotate-90" data-percent="95">
+                  <circle cx="56" cy="56" r="48" stroke="rgba(255, 255, 255, 0.05)" stroke-width="4" fill="transparent" />
+                  <circle class="progress-ring-circle" cx="56" cy="56" r="48" stroke="#D4AF37" stroke-width="4" fill="transparent" stroke-linecap="round" />
+                </svg>
+                <div class="absolute font-serif text-2xl font-bold text-white counter-number" data-target="17" data-suffix="+">17+</div>
+              </div>
+              <h3 class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">Years Experience</h3>
+              <p class="text-[10px] text-gray-500 mt-1 uppercase font-space tracking-wider">Astrology Legacy</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: CERTIFICATE SECTION -->
+      <section class="py-24 bg-cosmic-deep relative overflow-hidden border-t border-white/5">
+        <div class="constellations-bg" data-stars="35"></div>
+        <div class="absolute top-1/2 left-0 w-[400px] h-[400px] rounded-full bg-cosmic-purple/10 blur-[140px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            <!-- Left Grid Information -->
+            <div class="reveal space-y-6">
+              <span class="font-space text-xs uppercase tracking-[0.25em] text-gold-400 font-bold block mb-2">Sacred Endorsements</span>
+              <h2 class="font-serif text-3xl sm:text-4.5xl font-bold text-white leading-tight">
+                Receive Authentic <br />
+                <span class="italic text-gold-luxury font-bold">Astrology Guidance</span>
+              </h2>
+              <p class="text-gray-400 text-sm sm:text-base font-light leading-relaxed max-w-xl">
+                Acharya Ganesh incorporates rigorous charts alignment following parameters derived straight from original ancient texts. Experience real guidance built to restore absolute spiritual, psychological, and mental energy.
+              </p>
+
+              <!-- Custom Checkpoints Grid with Gold Accents -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3.5 gap-x-6 max-w-lg">
+                <div class="flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                  <span class="text-gray-200 text-sm font-space">Love Astrology Solutions</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                  <span class="text-gray-200 text-sm font-space">Marriage compatibility Analysis</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                  <span class="text-gray-200 text-sm font-space">Career & Business Vocation</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                  <span class="text-gray-200 text-sm font-space">Health astrology protection</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                  <span class="text-gray-200 text-sm font-space">Vastu Property alignments</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                  <span class="text-gray-200 text-sm font-space">Scientific Numerology Reports</span>
+                </div>
+              </div>
+
+              <div class="pt-4">
+                <button class="open-booking-modal bg-gold-gradient text-cosmic-dark font-space font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all cursor-pointer">
+                  Schedule Free Alignment
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Certificate Display -->
+            <div class="flex justify-center reveal">
+              <div class="relative max-w-md w-full sm:-rotate-1 hover:rotate-0 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gold-400/5 blur-[40px] rounded-2xl pointer-events-none"></div>
+                
+                <div class="relative rounded-2xl p-4 bg-gradient-to-tr from-gold-950/20 to-cosmic-purple/60 border border-gold-300/35 shadow-2xl overflow-hidden group">
+                  <div class="absolute inset-2 border border-gold-400/25 pointer-events-none rounded-xl"></div>
+                  <!-- Custom Generated red-and-gold premium border certificate from assets -->
+                  <img src="/src/assets/images/acharya_g_cert_1781844330303.jpg" class="w-full h-auto rounded-xl object-contain shadow-md" alt="Vedic Astrology Master Teachings Certification Seal" referrerpolicy="no-referrer" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: ONLINE CLASSES -->
+      <section id="services" class="py-24 bg-cosmic-dark relative overflow-hidden">
+        <div class="constellations-bg" data-stars="40"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <!-- Title -->
+          <div class="text-center max-w-2xl mx-auto mb-20 reveal">
+            <span class="font-space text-xs uppercase tracking-[0.25em] text-gold-400 font-bold block mb-3">Divine Realms & Sciences</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-4">
+              Online Classes <span class="italic text-gold-luxury text-gold-gradient">Also Available</span>
+            </h2>
+            <div class="w-20 h-0.5 bg-gold-400/30 mx-auto mt-4"></div>
+          </div>
+
+          <!-- Services Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+            <!-- Course 1: Lal Kitab -->
+            <div class="glass-premium p-6 rounded-2xl border-gold-glow card-shine flex flex-col justify-between group">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gold-300 mb-5 group-hover:bg-gold-400 group-hover:text-cosmic-dark transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+                </div>
+                <h3 class="font-serif font-bold text-lg text-white mb-3 group-hover:text-gold-200 transition-colors">Lal Kitab</h3>
+                <p class="text-xs text-gray-400 leading-relaxed font-light mb-6">
+                  Learn practical, simple, and amazingly effective daily life remedies. Master non-orthodox planetary prediction models, debt concepts (Pitra Rin), and correction mechanisms.
+                </p>
+              </div>
+              <button class="open-booking-modal w-full text-center py-2 px-4 rounded-full bg-white/5 text-gold-300 text-[10px] font-space font-bold uppercase tracking-widest border border-gold-400/20 hover:bg-gold-gradient hover:text-cosmic-dark hover:border-transparent transition-all cursor-pointer">
+                Enroll Now
+              </button>
+            </div>
+
+            <!-- Course 2: Astro Vastu -->
+            <div class="glass-premium p-6 rounded-2xl border-gold-glow card-shine flex flex-col justify-between group">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gold-300 mb-5 group-hover:bg-gold-400 group-hover:text-cosmic-dark transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 14h6M9 10h6M9 18h6"/></svg>
+                </div>
+                <h3 class="font-serif font-bold text-lg text-white mb-3 group-hover:text-gold-200 transition-colors">Astro Vastu</h3>
+                <p class="text-xs text-gray-400 leading-relaxed font-light mb-6">
+                  Bridge natal alignments with surrounding spatial fields. Learn standard residential map planning, directional blockages, and element balance based uniquely on horoscope charts.
+                </p>
+              </div>
+              <button class="open-booking-modal w-full text-center py-2 px-4 rounded-full bg-white/5 text-gold-300 text-[10px] font-space font-bold uppercase tracking-widest border border-gold-400/20 hover:bg-gold-gradient hover:text-cosmic-dark hover:border-transparent transition-all cursor-pointer">
+                Enroll Now
+              </button>
+            </div>
+
+            <!-- Course 3: Palm Reading -->
+            <div class="glass-premium p-6 rounded-2xl border-gold-glow card-shine flex flex-col justify-between group">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gold-300 mb-5 group-hover:bg-gold-400 group-hover:text-cosmic-dark transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8M10 10.5V5.5a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v9M6 14v2a7 7 0 0 0 7 7h3a2 2 0 0 0 2-2v-4"/></svg>
+                </div>
+                <h3 class="font-serif font-bold text-lg text-white mb-3 group-hover:text-gold-200 transition-colors">Palm Reading</h3>
+                <p class="text-xs text-gray-400 leading-relaxed font-light mb-6">
+                  Decode energetic curves, life/head/heart sectors, and lines of fortune printed on the hand. Master physiological character mappings and timelines with ancient Palmistry.
+                </p>
+              </div>
+              <button class="open-booking-modal w-full text-center py-2 px-4 rounded-full bg-white/5 text-gold-300 text-[10px] font-space font-bold uppercase tracking-widest border border-gold-400/20 hover:bg-gold-gradient hover:text-cosmic-dark hover:border-transparent transition-all cursor-pointer">
+                Enroll Now
+              </button>
+            </div>
+
+            <!-- Course 4: Kaal Chakra -->
+            <div class="glass-premium p-6 rounded-2xl border-gold-glow card-shine flex flex-col justify-between group">
+              <div>
+                <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gold-300 mb-5 group-hover:bg-gold-400 group-hover:text-cosmic-dark transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/><path d="M12 2v4M12 18v4M4 12h4M16 12h4"/></svg>
+                </div>
+                <h3 class="font-serif font-bold text-lg text-white mb-3 group-hover:text-gold-200 transition-colors">Kaal Chakra</h3>
+                <p class="text-xs text-gray-400 leading-relaxed font-light mb-6">
+                  Unfold the ultimate wheel of planetary time and critical life transitions. Learn transit calculations (Gochara), timing turnpoints, and custom protection mantras.
+                </p>
+              </div>
+              <button class="open-booking-modal w-full text-center py-2 px-4 rounded-full bg-white/5 text-gold-300 text-[10px] font-space font-bold uppercase tracking-widest border border-gold-400/20 hover:bg-gold-gradient hover:text-cosmic-dark hover:border-transparent transition-all cursor-pointer">
+                Enroll Now
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: WHY CHOOSE US -->
+      <section class="py-24 bg-cosmic-deep relative overflow-hidden border-t border-white/5">
+        <div class="constellations-bg" data-stars="30"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <!-- Title -->
+          <div class="text-center max-w-2xl mx-auto mb-20 reveal">
+            <span class="font-space text-xs uppercase tracking-[0.25em] text-gold-400 font-bold block mb-3">Supreme Standards</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-4">
+              Why <span class="italic text-gold-luxury text-gold-gradient">Choose Us?</span>
+            </h2>
+            <div class="w-20 h-0.5 bg-gold-400/30 mx-auto mt-4"></div>
+          </div>
+
+          <!-- Why Choose Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+            <!-- 1 -->
+            <div class="glass p-6 rounded-2xl border border-white/5 hover:border-gold-400/35 transition-all">
+              <span class="text-xs font-semibold text-gold-300 block mb-2 font-space">01 // FAITHFUL</span>
+              <h4 class="font-serif text-base font-bold text-white mb-2">Certified Astrologers</h4>
+              <p class="text-xs text-gray-400 leading-relaxed font-light">
+                Our vetted spiritual scholars undergo extensive shastric examinations before consultation.
+              </p>
+            </div>
+            <!-- 2 -->
+            <div class="glass p-6 rounded-2xl border border-white/5 hover:border-gold-400/35 transition-all">
+              <span class="text-xs font-semibold text-gold-300 block mb-2 font-space">02 // CUSTOMIZED</span>
+              <h4 class="font-serif text-base font-bold text-white mb-2">Personalized Guidance</h4>
+              <p class="text-xs text-gray-400 leading-relaxed font-light">
+                Never printed mock lists. Castings and remedies are designed strictly for your energetic degree.
+              </p>
+            </div>
+            <!-- 3 -->
+            <div class="glass p-6 rounded-2xl border border-white/5 hover:border-gold-400/35 transition-all">
+              <span class="text-xs font-semibold text-gold-300 block mb-2 font-space">03 // ACCURATE</span>
+              <h4 class="font-serif text-base font-bold text-white mb-2">Accurate Predictions</h4>
+              <p class="text-xs text-gray-400 leading-relaxed font-light">
+                Meticulous tracking of planetary transits (Gochara) guarantees high precision.
+              </p>
+            </div>
+            <!-- 4 -->
+            <div class="glass p-6 rounded-2xl border border-white/5 hover:border-gold-400/35 transition-all">
+              <span class="text-xs font-semibold text-gold-300 block mb-2 font-space">04 // SECURE</span>
+              <h4 class="font-serif text-base font-bold text-white mb-2">Confidential Conversation</h4>
+              <p class="text-xs text-gray-400 leading-relaxed font-light">
+                Your credentials, birth metrics, files, and discussion records are permanently private.
+              </p>
+            </div>
+            <!-- 5 -->
+            <div class="glass p-6 rounded-2xl border border-white/5 hover:border-gold-400/35 transition-all">
+              <span class="text-xs font-semibold text-gold-300 block mb-2 font-space">05 // CONSTANT</span>
+              <h4 class="font-serif text-base font-bold text-white mb-2">Dedicated Phone Support</h4>
+              <p class="text-xs text-gray-400 leading-relaxed font-light">
+                Immediate vocal support loops are accessible instantly over our secured line networks.
+              </p>
+            </div>
+            <!-- 6 -->
+            <div class="glass p-6 rounded-2xl border border-white/5 hover:border-gold-400/35 transition-all">
+              <span class="text-xs font-semibold text-gold-300 block mb-2 font-space">06 // ACCESSIBLE</span>
+              <h4 class="font-serif text-base font-bold text-white mb-2">Online Consultation</h4>
+              <p class="text-xs text-gray-400 leading-relaxed font-light">
+                Audio and High Definition video calls are available globally to sync with any dynamic timezone.
+              </p>
+            </div>
+            <!-- 7 -->
+            <div class="glass p-6 rounded-2xl border border-white/5 hover:border-gold-400/35 transition-all">
+              <span class="text-xs font-semibold text-gold-300 block mb-2 font-space">07 // CLASSICAL</span>
+              <h4 class="font-serif text-base font-bold text-white mb-2">Vedic Expertise</h4>
+              <p class="text-xs text-gray-400 leading-relaxed font-light">
+                Relying heavily on Parashara, Jaimini, and Tajik shastras for ultimate spiritual authenticity.
+              </p>
+            </div>
+            <!-- 8 -->
+            <div class="glass p-6 rounded-2xl border border-white/5 hover:border-gold-400/35 transition-all">
+              <span class="text-xs font-semibold text-gold-300 block mb-2 font-space">08 // EXPERIENCED</span>
+              <h4 class="font-serif text-base font-bold text-white mb-2">Trusted By Thousands</h4>
+              <p class="text-xs text-gray-400 leading-relaxed font-light">
+                Over a decade of real-world cases with registered life alignments and career success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: UPCOMING COURSES -->
+      <section id="courses" class="py-24 bg-cosmic-dark relative overflow-hidden">
+        <div class="constellations-bg" data-stars="35"></div>
+        <div class="absolute bottom-0 right-[20%] w-[350px] h-[350px] rounded-full bg-cosmic-purple/10 blur-[130px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <!-- Title -->
+          <div class="text-center max-w-2xl mx-auto mb-20 reveal">
+            <span class="font-space text-xs uppercase tracking-[0.25em] text-gold-400 font-bold block mb-3">Astral Academics</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-4">
+              Upcoming <span class="italic text-gold-luxury text-gold-gradient">Live Courses</span>
+            </h2>
+            <div class="w-20 h-0.5 bg-gold-400/30 mx-auto mt-4"></div>
+          </div>
+
+          <!-- Courses Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+            <!-- Course 1: Lal Kitab -->
+            <div class="glass-premium rounded-2xl border border-white/5 overflow-hidden flex flex-col justify-between hover:border-gold-400/40 transition-all group">
+              <div>
+                <div class="h-48 overflow-hidden relative border-b border-white/5 bg-cosmic-mid">
+                  <img src="/src/assets/images/lal_kitab_thumb_1781845785171.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Lal Kitab Masterclass" referrerpolicy="no-referrer" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-cosmic-dark/90 via-cosmic-dark/40 to-transparent"></div>
+                  <span class="absolute top-4 left-4 inline-block px-2.5 py-0.5 rounded bg-gold-950 text-gold-300 font-space text-[9px] uppercase tracking-wider border border-gold-400/30">LKB-01</span>
+                </div>
+                <div class="p-5">
+                  <span class="inline-block px-2 py-0.5 rounded bg-amber-950/60 text-amber-300 font-space text-[9px] uppercase tracking-wider mb-2">Live Class</span>
+                  <h3 class="font-serif font-bold text-base text-white mb-2 group-hover:text-gold-200 transition-colors">Lal Kitab Masterclass</h3>
+                  <p class="text-[11px] text-gray-400 leading-relaxed font-light">
+                    Master the legendary astro-remedies of Lal Kitab. Understand unique house analysis, planetary rectifications, and simple effective remedies to counter bad planetary dashas.
+                  </p>
+                </div>
+              </div>
+              <div class="p-5 pt-0">
+                <button class="open-booking-modal w-full bg-gold-gradient text-cosmic-dark font-space font-extrabold text-[10px] uppercase tracking-widest py-2.5 rounded-lg cursor-pointer hover:shadow-lg transition-all">
+                  Enroll In Class
+                </button>
+              </div>
+            </div>
+
+            <!-- Course 2: Ashtakvarga -->
+            <div class="glass-premium rounded-2xl border border-white/5 overflow-hidden flex flex-col justify-between hover:border-gold-400/40 transition-all group">
+              <div>
+                <div class="h-48 overflow-hidden relative border-b border-white/5 bg-cosmic-mid">
+                  <img src="/src/assets/images/ashtakvarga_thumb_1781845798836.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Ashtakvarga Secrets" referrerpolicy="no-referrer" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-cosmic-dark/90 via-cosmic-dark/40 to-transparent"></div>
+                  <span class="absolute top-4 left-4 inline-block px-2.5 py-0.5 rounded bg-gold-950 text-gold-300 font-space text-[9px] uppercase tracking-wider border border-gold-400/30">AVG-02</span>
+                </div>
+                <div class="p-5">
+                  <span class="inline-block px-2 py-0.5 rounded bg-blue-950/60 text-blue-300 font-space text-[9px] uppercase tracking-wider mb-2">Live Interactive</span>
+                  <h3 class="font-serif font-bold text-base text-white mb-2 group-hover:text-gold-200 transition-colors">Ashtakvarga Secrets</h3>
+                  <p class="text-[11px] text-gray-400 leading-relaxed font-light">
+                    Learn the comprehensive numerical evaluation of horoscopes. Determine transit effects with mathematical precision and identify dates for maximum life prosperity.
+                  </p>
+                </div>
+              </div>
+              <div class="p-5 pt-0">
+                <button class="open-booking-modal w-full bg-gold-gradient text-cosmic-dark font-space font-extrabold text-[10px] uppercase tracking-widest py-2.5 rounded-lg cursor-pointer hover:shadow-lg transition-all">
+                  Enroll In Class
+                </button>
+              </div>
+            </div>
+
+            <!-- Course 3: Kaal Chakra -->
+            <div class="glass-premium rounded-2xl border border-white/5 overflow-hidden flex flex-col justify-between hover:border-gold-400/40 transition-all group">
+              <div>
+                <div class="h-48 overflow-hidden relative border-b border-white/5 bg-cosmic-mid">
+                  <img src="/src/assets/images/kaal_chakra_thumb_1781845814649.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Kaal Chakra Dasas" referrerpolicy="no-referrer" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-cosmic-dark/90 via-cosmic-dark/40 to-transparent"></div>
+                  <span class="absolute top-4 left-4 inline-block px-2.5 py-0.5 rounded bg-gold-950 text-gold-300 font-space text-[9px] uppercase tracking-wider border border-gold-400/30">KLC-03</span>
+                </div>
+                <div class="p-5">
+                  <span class="inline-block px-2 py-0.5 rounded bg-purple-950/60 text-purple-300 font-space text-[9px] uppercase tracking-wider mb-2">Advanced Study</span>
+                  <h3 class="font-serif font-bold text-base text-white mb-2 group-hover:text-gold-200 transition-colors">Kaal Chakra Dasas</h3>
+                  <p class="text-[11px] text-gray-400 leading-relaxed font-light">
+                    Unlock the intricate wheel of time of Kaal Chakra Dasa. Master timing of life-altering transitions, dynamic zodiac transits, and strategic remedy layouts.
+                  </p>
+                </div>
+              </div>
+              <div class="p-5 pt-0">
+                <button class="open-booking-modal w-full bg-gold-gradient text-cosmic-dark font-space font-extrabold text-[10px] uppercase tracking-widest py-2.5 rounded-lg cursor-pointer hover:shadow-lg transition-all">
+                  Enroll In Class
+                </button>
+              </div>
+            </div>
+
+            <!-- Course 4: Karkansha -->
+            <div class="glass-premium rounded-2xl border border-white/5 overflow-hidden flex flex-col justify-between hover:border-gold-400/40 transition-all group">
+              <div>
+                <div class="h-48 overflow-hidden relative border-b border-white/5 bg-cosmic-mid">
+                  <img src="/src/assets/images/karkansha_thumb_1781845827600.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Karkansha Astrology" referrerpolicy="no-referrer" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-cosmic-dark/90 via-cosmic-dark/40 to-transparent"></div>
+                  <span class="absolute top-4 left-4 inline-block px-2.5 py-0.5 rounded bg-gold-950 text-gold-300 font-space text-[9px] uppercase tracking-wider border border-gold-400/30">KKN-04</span>
+                </div>
+                <div class="p-5">
+                  <span class="inline-block px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-300 font-space text-[9px] uppercase tracking-wider mb-2">Specialized Division</span>
+                  <h3 class="font-serif font-bold text-base text-white mb-2 group-hover:text-gold-200 transition-colors">Karkansha Astrology</h3>
+                  <p class="text-[11px] text-gray-400 leading-relaxed font-light">
+                    Deep-dive into the magical Navamsha sub-chart. Decode Atmakaraka behaviors, ultimate planetary desires, career directions, and your true soul mission.
+                  </p>
+                </div>
+              </div>
+              <div class="p-5 pt-0">
+                <button class="open-booking-modal w-full bg-gold-gradient text-cosmic-dark font-space font-extrabold text-[10px] uppercase tracking-widest py-2.5 rounded-lg cursor-pointer hover:shadow-lg transition-all">
+                  Enroll In Class
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: CONSULTATION CTA -->
+      <section id="consultation" class="relative py-20 bg-cosmic-deep overflow-hidden border-t border-b border-white/5">
+        <div class="constellations-bg" data-stars="30"></div>
+        <!-- Golden Aura glow behind section contents -->
+        <div class="absolute inset-0 bg-gradient-to-r from-gold-950/10 via-cosmic-purple/30 to-transparent pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div class="glass-premium rounded-3xl p-8 sm:p-12 md:p-16 border-gold-glow flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
+            <!-- Custom graphic glows -->
+            <div class="absolute -right-20 -top-20 w-60 h-60 rounded-full bg-gold-500/10 blur-[80px]"></div>
+
+            <div class="max-w-2xl space-y-6">
+              <span class="font-space text-xs uppercase tracking-[0.22em] text-gold-400 font-bold block">Auspicious Scheduling</span>
+              <h2 class="font-serif text-3xl sm:text-4xl lg:text-4.5xl font-black text-white">
+                Book Your <span class="italic text-gold-luxury">Free Consultation</span> Session
+              </h2>
+              <p class="text-gray-300 text-sm sm:text-base font-light">
+                Discover the real forces defining your business, marriage, or financial security directly. Spend 15 minutes aligned in complete planetary clarity with Acharya Ganesh.
+              </p>
+              <div class="pt-2">
+                <button class="open-booking-modal bg-gold-gradient text-cosmic-dark font-space font-extrabold text-xs uppercase tracking-widest px-8 py-4 rounded-xl shadow-[0_4px_20px_rgba(212,175,55,0.35)] hover:shadow-[0_4px_30px_rgba(212,175,55,0.5)] transition-all cursor-pointer">
+                  Schedule Now
+                </button>
+              </div>
+            </div>
+
+            <!-- Beautiful right visual profile preview -->
+            <div class="relative w-48 h-48 sm:w-64 sm:h-64 rounded-2xl overflow-hidden border border-gold-400/40 shadow-2xl flex-shrink-0">
+              <img src="/src/assets/images/regenerated_image_1781846537807.png" class="w-full h-full object-cover" alt="Vedic Acharya Astrologer Specialist Portrait" referrerpolicy="no-referrer" />
+              <div class="absolute inset-0 bg-gradient-to-t from-cosmic-dark to-transparent opacity-40"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8: LEAD FORM -->
+      <section id="contact" class="py-24 bg-cosmic-dark relative overflow-hidden">
+        <div class="constellations-bg" data-stars="35"></div>
+        <div class="absolute top-[20%] right-[-100px] w-[400px] h-[400px] rounded-full bg-cosmic-glow/10 blur-[130px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            <!-- Left Grid Panel -->
+            <div class="space-y-6 reveal">
+              <span class="font-space text-xs uppercase tracking-[0.25em] text-gold-400 font-bold block mb-2">Connect Stars</span>
+              <h2 class="font-serif text-3xl sm:text-[2.75rem] font-bold text-white leading-tight">
+                Get Personalized <br />
+                <span class="italic text-gold-luxury">Astrology Guidance</span>
+              </h2>
+              <p class="text-gray-400 text-sm sm:text-base font-light leading-relaxed max-w-xl">
+                Submit your birth attributes below. Acharya Ganesh and his scholarly disciples will formulate a thorough examination layout to resolve critical obstructions.
+              </p>
+
+              <!-- Quick List -->
+              <div class="space-y-3 pt-2">
+                <div class="flex items-center gap-3">
+                  <span class="text-gold-400 font-bold">✔</span>
+                  <span class="text-gray-300 text-sm font-space">Completely confidential alignments</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="text-gold-400 font-bold">✔</span>
+                  <span class="text-gray-300 text-sm font-space">Accurate charts casting derived via verified coordinates</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="text-gold-400 font-bold">✔</span>
+                  <span class="text-gray-300 text-sm font-space">Genuine Vedic remedies from scriptures</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Glassmorphism interactive Lead Form -->
+            <div class="reveal">
+              <div class="glass-premium p-8 rounded-3xl border-gold-glow shadow-2xl relative">
+                <h3 class="font-serif font-black text-xl text-white mb-2">Calculate Transit Alignments</h3>
+                <p class="text-xs text-gray-400 mb-6 font-space">Submit your real birth coordinates safely</p>
+
+                <form id="main-lead-form" class="space-y-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="lead-name" class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Your Name *</label>
+                      <input type="text" id="lead-name" required placeholder="Madhava Roy" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-300" />
+                    </div>
+                    <div>
+                      <label for="lead-phone" class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Phone Number *</label>
+                      <input type="tel" id="lead-phone" required placeholder="+91 99999 99999" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-300" />
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="lead-email" class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Email Address</label>
+                      <input type="email" id="lead-email" placeholder="companion@domain.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-300" />
+                    </div>
+                    <div>
+                      <label for="lead-city" class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Your City *</label>
+                      <input type="text" id="lead-city" required placeholder="New Delhi" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-300" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="lead-type" class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Consultation Category *</label>
+                    <select id="lead-type" required class="w-full bg-cosmic-dark border border-white/10 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:border-gold-300">
+                      <option value="Marriage">Marriage Astrology & Kundli Matching</option>
+                      <option value="Love">Love, Attraction & Relationships</option>
+                      <option value="Career">Career & Vocational Guidance</option>
+                      <option value="Business">Business Setup & Brand Naming</option>
+                      <option value="Numerology">Numerology Calculations</option>
+                      <option value="Vastu">Vastu Shastra Architecture</option>
+                      <option value="Other">Other Astrological Alignments</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="lead-message" class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Your Birth Details (Date, Grid Time, Place)</label>
+                    <textarea id="lead-message" rows="3" placeholder="Date: Oct 12, 1991. Time: 04:15 AM. Place: Mumbai. Description of query." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-300"></textarea>
+                  </div>
+
+                  <button type="submit" class="w-full bg-gold-gradient text-cosmic-dark font-space font-extrabold text-xs uppercase tracking-widest py-4 rounded-xl cursor-pointer hover:shadow-xl transition-all mt-4">
+                    Submit Astral Inquiry
+                  </button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 9: FAQ -->
+      <section id="faq" class="py-24 bg-cosmic-deep relative overflow-hidden border-t border-b border-white/5">
+        <div class="constellations-bg" data-stars="30"></div>
+        <div class="absolute top-1/4 left-1/3 -translate-x-1/2 w-[350px] h-[350px] rounded-full bg-cosmic-purple/10 blur-[130px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 w-full">
+          <!-- Title -->
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <span class="font-space text-xs uppercase tracking-[0.25em] text-gold-400 font-bold block mb-3">Ancient Clarifications</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-4">
+              Frequently Asked <span class="italic text-gold-luxury">Insights</span>
+            </h2>
+            <div class="w-20 h-0.5 bg-gold-400/30 mx-auto mt-4"></div>
+          </div>
+
+          <!-- JavaScript Accordions layout -->
+          <div class="space-y-4 reveal">
+            <!-- FAQ 1 -->
+            <div class="glass p-2.5 rounded-2xl border border-white/5 overflow-hidden transition-all duration-300">
+              <button class="faq-header w-full flex items-center justify-between text-left px-6 py-4 cursor-pointer focus:outline-none group">
+                <span class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">How accurate is Acharya Ganesh's astrology?</span>
+                <span class="chevron-icon text-gold-400 bg-white/5 w-7 h-7 rounded-full flex items-center justify-center font-mono text-sm leading-none flex-shrink-0">✕</span>
+              </button>
+              <div class="faq-content">
+                <div class="px-6 pb-6 pt-1 text-sm text-gray-400 leading-relaxed font-light">
+                  Our calculations are based strictly on classical Parashara and Jaimini Vedic texts, using exact geo-coordinates down to the minute. This layout yields up to 99.9% consistency in charting your energetic transit periods.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="glass p-2.5 rounded-2xl border border-white/5 overflow-hidden transition-all duration-300">
+              <button class="faq-header w-full flex items-center justify-between text-left px-6 py-4 cursor-pointer focus:outline-none group">
+                <span class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">How do I book an auspicious consultation session?</span>
+                <span class="chevron-icon text-gold-400 bg-white/5 w-7 h-7 rounded-full flex items-center justify-center font-mono text-sm leading-none flex-shrink-0">✕</span>
+              </button>
+              <div class="faq-content">
+                <div class="px-6 pb-6 pt-1 text-sm text-gray-400 leading-relaxed font-light">
+                  Click on any of our "Book Consultation" triggers across the page. This layouts our sacred booking modal. Choose your coordinates and submit. Acharya Ganesh's team of scholarly schedulers will coordinate an alignment with you quickly.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="glass p-2.5 rounded-2xl border border-white/5 overflow-hidden transition-all duration-300">
+              <button class="faq-header w-full flex items-center justify-between text-left px-6 py-4 cursor-pointer focus:outline-none group">
+                <span class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">Can I consult entirely online from outer countries?</span>
+                <span class="chevron-icon text-gold-400 bg-white/5 w-7 h-7 rounded-full flex items-center justify-center font-mono text-sm leading-none flex-shrink-0">✕</span>
+              </button>
+              <div class="faq-content">
+                <div class="px-6 pb-6 pt-1 text-sm text-gray-400 leading-relaxed font-light">
+                  Yes, absolutely. Acharya Ganesh serves clients in over 100+ cities globally. We host secure audio-visual platforms to conduct consultations, and deliver digital reports containing complete remedial descriptions.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="glass p-2.5 rounded-2xl border border-white/5 overflow-hidden transition-all duration-300">
+              <button class="faq-header w-full flex items-center justify-between text-left px-6 py-4 cursor-pointer focus:outline-none group">
+                <span class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">What exact services are available on this platform?</span>
+                <span class="chevron-icon text-gold-400 bg-white/5 w-7 h-7 rounded-full flex items-center justify-center font-mono text-sm leading-none flex-shrink-0">✕</span>
+              </button>
+              <div class="faq-content">
+                <div class="px-6 pb-6 pt-1 text-sm text-gray-400 leading-relaxed font-light">
+                  We render premium support services across Love & Relationships, Kundli Marriage matching, Job promotions/Career, Traditional Business Brand naming, and highly custom Numerology or Vastu Shastra residential corrections.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="glass p-2.5 rounded-2xl border border-white/5 overflow-hidden transition-all duration-300">
+              <button class="faq-header w-full flex items-center justify-between text-left px-6 py-4 cursor-pointer focus:outline-none group">
+                <span class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">Do you provide comprehensive printed numerology reports?</span>
+                <span class="chevron-icon text-gold-400 bg-white/5 w-7 h-7 rounded-full flex items-center justify-center font-mono text-sm leading-none flex-shrink-0">✕</span>
+              </button>
+              <div class="faq-content">
+                <div class="px-6 pb-6 pt-1 text-sm text-gray-400 leading-relaxed font-light">
+                  Yes. Each numerology alignment is cast manually using planetary numbers paired with Pythagoras and Chaldean grids. We ship fully formatted PDF reports directly to your recorded email profile.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="glass p-2.5 rounded-2xl border border-white/5 overflow-hidden transition-all duration-300">
+              <button class="faq-header w-full flex items-center justify-between text-left px-6 py-4 cursor-pointer focus:outline-none group">
+                <span class="font-serif font-bold text-base text-white group-hover:text-gold-200 transition-colors">Do you offer on-site industrial Vastu consultation?</span>
+                <span class="chevron-icon text-gold-400 bg-white/5 w-7 h-7 rounded-full flex items-center justify-center font-mono text-sm leading-none flex-shrink-0">✕</span>
+              </button>
+              <div class="faq-content">
+                <div class="px-6 pb-6 pt-1 text-sm text-gray-400 leading-relaxed font-light">
+                  Acharya Ganesh handles high-accuracy commercial, industrial, and residential Vastu shastra audits. We arrange site analyses to align dynamic energies without executing heavy structural breakdowns.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 10: FOOTER -->
+      <footer class="bg-cosmic-dark border-t border-white/5 relative overflow-hidden text-sm">
+        <div class="constellations-bg" data-stars="30"></div>
+        <div class="absolute bottom-0 right-0 w-[400px] h-[300px] rounded-full bg-gold-950/10 blur-[110px] pointer-events-none"></div>
+
+        <!-- 4 Grid Columns Footer panel -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10 w-full">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <!-- C1: About -->
+            <div class="space-y-4">
+              <a href="#home" class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-gold-400 flex items-center justify-center">
+                  <span class="text-cosmic-dark font-cinzel font-black text-xs">AG</span>
+                </div>
+                <span class="font-cinzel text-base font-black tracking-widest text-gold-luxury">ACHARYA GANESH</span>
+              </a>
+              <p class="text-gray-400 text-xs font-light leading-relaxed">
+                Empowering blessed seekers internationally since decades. Merging orthodox astronomical calculations with modern pragmatic support for happy family equations.
+              </p>
+              <!-- Icons -->
+              <div class="flex gap-3 pt-2">
+                <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-gold-400 text-gray-400 hover:text-gold-300 transition-all">FB</a>
+                <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-gold-400 text-gray-400 hover:text-gold-300 transition-all">IG</a>
+                <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-gold-400 text-gray-400 hover:text-gold-300 transition-all">YT</a>
+                <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-gold-400 text-gray-400 hover:text-gold-300 transition-all">TW</a>
+              </div>
+            </div>
+
+            <!-- C2: Services link list -->
+            <div class="space-y-4">
+              <h4 class="font-serif font-bold text-white text-base tracking-wide text-gold-luxury">Astrology Services</h4>
+              <ul class="flex flex-col gap-2.5 text-xs text-gray-400 font-light">
+                <li><a href="#services" class="hover:text-gold-200 transition-colors">Marriage Kundli Matching</a></li>
+                <li><a href="#services" class="hover:text-gold-200 transition-colors">Love & Reunion Solutions</a></li>
+                <li><a href="#services" class="hover:text-gold-200 transition-colors">Career Path Predictions</a></li>
+                <li><a href="#services" class="hover:text-gold-200 transition-colors">Auspicous Brand Naming</a></li>
+                <li><a href="#services" class="hover:text-gold-200 transition-colors">Modern House Vastu corrections</a></li>
+                <li><a href="#services" class="hover:text-gold-200 transition-colors">Chaldean Numerology Setup</a></li>
+              </ul>
+            </div>
+
+            <!-- C3: Cities list -->
+            <div class="space-y-4">
+              <h4 class="font-serif font-bold text-white text-base tracking-wide text-gold-luxury">Popular Cities Served</h4>
+              <ul class="flex flex-col gap-2.5 text-xs text-gray-400 font-light">
+                <li><span class="text-gray-300">Mumbai</span> • Maharashtra, IN</li>
+                <li><span class="text-gray-300">New Delhi</span> • Delhi NCR, IN</li>
+                <li><span class="text-gray-300">Bengaluru</span> • Karnataka, IN</li>
+                <li><span class="text-gray-300">London</span> • Greater London, UK</li>
+                <li><span class="text-gray-300">Dubai</span> • Jumeirah, UAE</li>
+                <li><span class="text-gray-300">New York</span> • Manhattan, USA</li>
+              </ul>
+            </div>
+
+            <!-- C4: Contact coordinates -->
+            <div class="space-y-4">
+              <h4 class="font-serif font-bold text-white text-base tracking-wide text-gold-luxury">Contact Info</h4>
+              <ul class="flex flex-col gap-3 text-xs text-gray-400 font-light">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-gold-400">📍</span>
+                  <span>Acharya Ganesh Celestial Ashram, Sector 4, Dwarka, New Delhi 110075, India</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-gold-400">✉</span>
+                  <a href="mailto:contact@acharyaganesh.com" class="hover:text-gold-200">contact@acharyaganesh.com</a>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-gold-400">📞</span>
+                  <a href="tel:+919999999999" class="hover:text-gold-200">+91 99999 99999</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Bottom bar Copyright -->
+          <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 uppercase tracking-widest">
+            <div>© 2026 Acharya Ganesh Vedic Astrology • All Rights Reserved</div>
+            <div class="flex gap-6 text-[10px]">
+              <a href="#" class="hover:text-gold-400">Privacy Policy</a>
+              <a href="#" class="hover:text-gold-400">Terms of Service</a>
+              <a href="#" class="hover:text-gold-400">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-gold-gradient text-cosmic-dark flex items-center justify-center shadow-lg transition-all scale-0 opacity-0 cursor-pointer focus:outline-none" aria-label="Go to Top">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 stroke-[2.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <!-- BOOKING APPOINTMENT MODAL -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+      <div class="absolute inset-0 bg-cosmic-dark/90 backdrop-blur-md"></div>
+      
+      <div class="relative max-w-lg w-full glass-premium border-gold-glow p-8 rounded-3xl shadow-2xl z-10 transition-all">
+        <!-- Close trigger -->
+        <button id="close-modal-btn" class="absolute top-5 right-5 text-gray-400 hover:text-white text-lg focus:outline-none cursor-pointer" aria-label="Close form Modal">✕</button>
+
+        <h3 class="font-serif font-black text-2xl text-white mb-2">Book Traditional Consultation</h3>
+        <p class="text-xs text-gray-400 mb-6 font-space">Formulate compatible coordinates with Acharya Ganesh</p>
+
+        <form id="modal-consultation-form" class="space-y-4">
+          <div>
+            <label for="modal-name" class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Seeker Name *</label>
+            <input type="text" id="modal-name" required placeholder="Narendra Singh" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-300" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="modal-phone" class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Phone Number *</label>
+              <input type="tel" id="modal-phone" required placeholder="+91 99999 99999" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-300" />
+            </div>
+            <div>
+              <label for="modal-type" class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Astral Area *</label>
+              <select id="modal-type" required class="w-full bg-cosmic-dark border border-white/10 rounded-xl px-4 py-3 text-sm text-gray-200 focus:outline-none focus:border-gold-300">
+                <option value="Birth-Reading">Comprehensive Birth Reading (Kundli)</option>
+                <option value="Spouse-Compatibility">Spouse Compatibility (Gun Milan)</option>
+                <option value="Trade-Enterprise">Trade & Business Expansion</option>
+                <option value="House-Vastu">House / Land Vastu Alignment</option>
+                <option value="Corrective-Naming">Corrective Naming Formulas</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-[10px] uppercase font-space tracking-wider text-gray-400 mb-1.5 font-bold">Inquiry description</label>
+            <textarea rows="3" placeholder="Explain your core obstructions or target outcomes..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-300"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-gold-gradient text-cosmic-dark font-space font-extrabold text-xs uppercase tracking-widest py-3 rounded-xl cursor-pointer hover:shadow-xl transition-all mt-4">
+            Request Sacred Session
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>
