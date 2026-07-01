@@ -330,11 +330,11 @@ function initModalAndForms() {
     modalForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const nameInput = document.getElementById("modal-name");
-      const name = nameInput ? nameInput.value : "Blessed Soul";
-      const selection = document.getElementById("modal-type")?.value || "Astro Reading";
+      const name = nameInput ? nameInput.value : "Student";
+      const selection = "astrology program enrollment";
 
       closeModal();
-      showToast(name, selection.toLowerCase());
+      showToast(name, selection);
       modalForm.reset();
     });
   }
