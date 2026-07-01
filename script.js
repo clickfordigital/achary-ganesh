@@ -107,8 +107,10 @@ function initCounters() {
   const counterElements = document.querySelectorAll(".counter-number");
   
   const animateCounter = (element) => {
-    const target = parseInt(element.getAttribute("data-target")) || 0;
+    const targetAttr = element.getAttribute("data-target") || "0";
+    const target = parseFloat(targetAttr) || 0;
     const suffix = element.getAttribute("data-suffix") || "";
+    const isFloat = targetAttr.includes(".");
     const duration = 2200; // ms
     const startTime = performance.now();
 
@@ -118,18 +120,27 @@ function initCounters() {
       
       // Ease out cubic
       const easeProgress = 1 - Math.pow(1 - progress, 3);
-      const currentValue = Math.floor(easeProgress * target);
+      const currentValue = easeProgress * target;
 
-      if (target >= 1000) {
-        element.textContent = currentValue.toLocaleString("en-IN") + suffix;
+      if (isFloat) {
+        element.textContent = currentValue.toFixed(1) + suffix;
       } else {
-        element.textContent = currentValue + suffix;
+        const floorVal = Math.floor(currentValue);
+        if (target >= 1000) {
+          element.textContent = floorVal.toLocaleString("en-IN") + suffix;
+        } else {
+          element.textContent = floorVal + suffix;
+        }
       }
 
       if (progress < 1) {
         requestAnimationFrame(updateCount);
       } else {
-        element.textContent = target.toLocaleString("en-IN") + suffix;
+        if (isFloat) {
+          element.textContent = target.toFixed(1) + suffix;
+        } else {
+          element.textContent = target.toLocaleString("en-IN") + suffix;
+        }
       }
     };
 
